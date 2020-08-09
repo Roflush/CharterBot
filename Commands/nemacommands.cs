@@ -40,5 +40,12 @@ namespace chaterbot.Commands
 
             await ctx.Channel.SendMessageAsync(embed: embed).ConfigureAwait(false);
         }
+
+        [Command("nmastory")]
+        [Description("This gives the story on what happened.")]
+        public async Task nemastory(CommandContext ctx)
+        {
+            await ctx.Channel.SendMessageAsync("Test").ConfigureAwait(false);
+        }
     }
 }

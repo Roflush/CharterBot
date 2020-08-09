@@ -6,7 +6,8 @@ using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using chaterbot.Commands;
-
+using DSharpPlus.Entities;
+using System.Runtime.CompilerServices;
 
 namespace chaterbot
 {
@@ -53,7 +54,7 @@ namespace chaterbot
             Commands.RegisterCommands<nemaCommmands>();
 
             await Client.ConnectAsync();
-
+   
             await Task.Delay(-1);
         }
 
