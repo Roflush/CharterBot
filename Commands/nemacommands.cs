@@ -9,14 +9,6 @@ namespace chaterbot.Commands
 {
     class nemaCommmands : BaseCommandModule
     {
-        [Command("ping")]
-        [Description("Only used for testing!")]
-        public async Task Ping(CommandContext ctx)
-        {
-            await ctx.TriggerTypingAsync();
-            await ctx.Channel.SendMessageAsync("Pong")
-                 .ConfigureAwait(false);
-        }
 
         [Command("neme")]
         [Aliases("nemamemes", "nema", "kaylon", "kaylonmemes")]
